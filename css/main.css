@@ -1,3 +1,5 @@
+@media screen and (min-width: 200px)
+{
 html {
   font-size: 1em;
 }
@@ -10,7 +12,7 @@ header {
 
 }
 
-.logo {
+.logo > svg {
   width: 100px;
   height: 100px;
   /*centers the logo*/
@@ -18,10 +20,11 @@ header {
   margin-left: auto;
   margin-right: auto;
   /*centers the logo*/
-  margin-top: 35px;
+  margin-top: 20px;
+  fill: #990000;
 }
 
-h1 {
+.header .mobile {
   background-color: #000000;
   position: fixed;
   left: 0;
@@ -33,6 +36,10 @@ h1 {
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
+}
+
+.header .desktop {
+  display: none;
 }
 
 nav {
@@ -66,6 +73,15 @@ nav {
   margin-right: 10px;
 }
 
+article > img {
+  float: left;
+  margin-right: 15px;
+}
+
+article {
+  float: left;
+}
+
 article > h2 {
   padding-top: 45px;
 }
@@ -80,4 +96,113 @@ h2 {
 
 footer {
   margin-bottom: 50px;
+}
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 1em;
+  }
+
+  a {
+
+  }
+
+  header {
+
+  }
+
+  .logo > svg {
+    width: 200px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: transparent;
+    float: left;
+    margin-left: 25px;
+    fill: #990000;
+
+  }
+
+  .header .mobile {
+    display: none;
+    float: left;
+  }
+
+  #top {
+    display: none;
+  }
+
+  .header .desktop {
+    display: block;
+    color: black;
+    width: 100%;
+    font-size: 7em;
+    text-align: center;
+    margin-top: 45px;
+    float: left;
+    position: relative;
+  }
+
+  nav {
+    font-size: 1em;
+    position: fixed;
+    background-color: transparent;
+    float: left;
+    margin-left: 0;
+    margin-top: 200px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .menubar {
+    display: none;
+  }
+
+  .menubar > svg {
+    display: none;
+  }
+
+  .menubar > a {
+    display: none;
+  }
+
+  section {
+    margin-left: 200px;
+    margin-top: 0;
+    margin-right: 25px;
+    float: left;
+  }
+
+  article {
+    float: left;
+    margin-top: -15px;
+    margin-bottom: -20px;
+  }
+
+  article > h2 {
+
+  }
+
+  article > img {
+    float: right;
+    height: 125px;
+    width: 125px;
+    margin-left: 10px;
+}
+
+  .p {
+
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  footer {
+    margin-bottom: 50px;
+  }
 }
